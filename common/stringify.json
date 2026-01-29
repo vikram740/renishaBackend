@@ -1,0 +1,21 @@
+{
+    "SUCCESS_STATUS_CODE": 200,
+    "INTERNAL_ERROR_STATUS_CODE": 500,
+    "AUTHORIZATION_ERROR_CODE": 401,
+    "SUCCESS_MESSAGE": "success",
+    "PROVIDE_AUTHORIZATION_DETAILS": "Provide Authorization detail",
+    "EMAIL_NOT_EMPTY": "email should not be empty",
+    "VALID_EMAIL_ID": "entered email is not valid",
+    "PASSWORD_NOT_EMPTY": "password should not be empty",
+    "EXISTS_EMAIL": "email is already existed",
+    "VALIDATION_ERROR_STATUS_CODE": 422,
+    "WRONG_EMAIL": "entered wrong email",
+    "WRONG_PASSWORD": "entered wrong password",
+    "FIRST_NAME_NOT_EMPTY": "First Name should not be empty",
+    "LAST_NAME_NOT_EMPTY": "Last Name should not be empty",
+    "PHONE_NOT_EMPTY": "Phone Number should not be empty",
+    "CITY_NOT_EMPTY": "City should not be empty",
+    "STATE_NOT_EMPTY": "State should not be empty",
+    "ZIPCODE_NOT_EMPTY": "Zipcode should not be empty",
+    "PHONE_NUMBER_UNIQUE": "Phone number must be unique"
+}
