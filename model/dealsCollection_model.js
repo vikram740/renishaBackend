@@ -15,6 +15,12 @@ const dealsCollectionSchema = new mongoose.Schema(
             required: true,
             index: true
         },
+         agentId: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "agent",
+            required: true,
+            index: true
+        },
         paymentMode: {
             type: String,
             enum: ["online", "cash"],
@@ -26,6 +32,7 @@ const dealsCollectionSchema = new mongoose.Schema(
             default: "CASH",
             required: true
         },
+     
 
         installmentNumber: {
             type: Number,
@@ -38,12 +45,14 @@ const dealsCollectionSchema = new mongoose.Schema(
         primaryQRCode: {
             type: String,
         },
-
         transactionId: {
             type: String,
             unique: true,
-            sparse: true
+            sparse: true,
+            index: true
         }
+
+      
     },
     {
         timestamps: true
