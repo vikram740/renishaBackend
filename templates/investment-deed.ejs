@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Investment Deed</title>
+
+</head>
+
+<body>
+    <div class="page">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1>RENISHA GROUPS</h1>
+            <h2>Renisha Savings Scheme</h2><br>
+            <p>4/780c Renisha Groups, Krishnagiri – 635203</p>
+        </div>
+        <div class="doc-line">
+            <span class="doc-no">
+                <%= documentNo %>
+            </span>
+            <span class="doc-title">Investment Deed</span>
+        </div>
+
+        <!-- INVESTOR & NOMINEE -->
+        <table class="info-table">
+            <tr>
+                <!-- INVESTOR -->
+                <!-- <td class="person-cell">
+                    <% if (investorPhoto) { %>
+                        <% if (investorPhoto) { %>
+                            <img src="<%- investorPhoto %>" class="photo" style="width:90px;height:110px;" />
+                            <% } %>
+
+                                <% } %>
+                                    <p><b>Mr. <%= investorName %></b></p>
+                                    <p>Aadhaar Number <%= investorAadhaar %>
+                                    </p>
+                                    <p>
+                                        <%= investorAddress %>
+                                    </p>
+                </td> -->
+                <td class="person-cell">
+                    <div class="person-box">
+                        <% if (investorPhoto) { %>
+                            <img src="<%- investorPhoto %>" class="photo" />
+                            <% } %>
+
+                                <div class="person-details">
+                                    <p><b>Mr. <%= investorName %></b></p>
+                                    <p><b>Aadhaar : <%= investorAadhaar %></b></p>
+                                    <p><b>Address : <%= investorAddress %></b></p>
+                                </div>
+                    </div>
+                </td>
+
+
+                <!-- NOMINEE -->
+                <!-- <td class="person-cell">
+                    <% if (nomineePhoto) { %>
+                        <% if (nomineePhoto) { %>
+                            <img src="<%- nomineePhoto %>" class="photo" style="width:90px;height:110px;" />
+                            <% } %>
+
+                                <% } %>
+
+                                    <p><b>Mrs. <%= nomineeName %></b></p>
+                                    <p>Aadhaar Number <%= nomineeAadhaar %>
+                                    </p>
+                                    <p>
+                                        <%= nomineeAddress %>
+                                    </p>
+                </td> -->
+                <td class="person-cell">
+                    <div class="person-box">
+                        <% if (nomineePhoto) { %>
+                            <img src="<%- nomineePhoto %>" class="photo" />
+                            <% } %>
+
+                                <div class="person-details">
+                                    <p><b>Mrs. <%= nomineeName %></b></p>
+                                    <p><b>Aadhaar : <%= nomineeAadhaar %></b></p>
+                                    <p><b> Address :<%= nomineeAddress %></b></p>
+                                </div>
+                    </div>
+                </td>
+
+            </tr>
+        </table>
+
+        <!-- CONTENT -->
+        <div class="content">
+            <p>
+                This Investment Deed is made and entered into on
+                <b>
+                    <%= startDate %>
+                </b>,
+                by and between <b>Mr. <%= investorName %></b>,
+                holding Aadhaar Number <b>
+                    <%= investorAadhaar %>
+                </b>,
+                residing at <b>
+                    <%= investorAddress %>
+                </b>
+                (hereinafter referred to as the Investor),
+                and <b>RENISHA GROUPS - Renisha Savings Scheme, 4/780c Renisha Groups, Krishnagiri – 635203</b>
+                (hereinafter referred to as the Receiver of Investment).
+            </p>
+
+            <p>
+                The Investor has agreed to invest a sum of
+                <b>₹ <%= investmentAmount %>/-</b>
+                for a fixed tenure of <b>
+                    <%= tenure %>
+                </b>,
+                commencing on <b>
+                    <%= startDate %>
+                </b>
+                and ending on <b>
+                    <%= endDate %>
+                </b>.
+                At the completion of the tenure amount,
+                the Receiver agrees to pay the Investor a total return of
+                <b>₹ <%= totalReturn %>/-</b>.
+            </p>
+
+            <p>
+                The Investor hereby declares
+                <b>Mrs. <%= nomineeName %></b>
+                holding Aadhaar Number <b>
+                    <%= nomineeAadhaar %>
+                </b>,
+                residing at <b>
+                    <%= nomineeAddress %>
+                </b>
+                as the Nominee for this investment.
+                In the event of the Investor’s demise,
+                all rights and payable amounts shall be transferred
+                to the above-named nominee.
+            </p>
+
+            <p>
+                This deed shall automatically terminate upon repayment
+                of the total return by the Receiver to the Investor or Nominee
+                and shall be governed by the laws of India.
+            </p>
+
+        </div>
+        <div class="noteDiv">
+            <p class="note">
+                <b>Note:</b> This is a computer-generated investment deed and does not require any physical signatures.
+            </p>
+        </div>
+        <!-- FOOTER -->
+        <div class="footer">
+            <b>RENISHA GROUPS</b><br /><br>
+            RENISHA SAVINGS SCHEME<br /><br>
+            4/780c Renisha Groups, Krishnagiri – 635203
+        </div>
+    </div>
+</body>
+
+</html>

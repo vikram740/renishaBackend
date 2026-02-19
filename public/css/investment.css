@@ -1,0 +1,139 @@
+@page {
+    size: A4;
+    margin: 14mm;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    color: #000;
+    background: #fff;
+}
+
+.page {
+    width: 100%;
+    position: relative;
+}
+
+/* ================= HEADER ================= */
+.header {
+    text-align: center;
+    background: #d9edc6;
+    padding: 12px 10px;
+    border-bottom: 2px solid #9dbb7a;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.header h2 {
+    margin: 4px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ================= DOC LINE ================= */
+.doc-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px;
+    gap: 18px;
+}
+
+.doc-no {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.doc-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ================= PERSON TABLE ================= */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.person-cell {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+    font-size: 15px;
+    /* text-align: center; */
+}
+
+/* 
+.photo {
+    display: block;
+    width: 90px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid #333;
+    margin-bottom: 6px;
+} */
+.person-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.photo {
+    width: 90px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid #000;
+}
+
+.person-details p {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+/* ================= CONTENT ================= */
+.content {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+/* ================= NOTE ================= */
+.noteDiv {
+    margin-top: 30px;
+}
+
+.note {
+    margin-top: 18px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    background: #d9edc6;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 2px solid #9dbb7a;
+}
